@@ -1,0 +1,97 @@
+/* ----- Reset -----*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+body {
+  background-color: black;
+  color: azure;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: inherit; 
+  text-align: center;
+  border: none;
+}
+
+/* ----- App ----- */
+
+.app {
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.app_title {
+  margin-top: 100px;
+  width: 300px;
+  text-align: center;
+  font-size: 2.5rem;
+  text-shadow: -3px -3px orange,
+                3px 3px orange,
+                -3px 3px orange,
+                3px -3px orange;
+}
+
+.app_container {
+  text-align: center;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app_btn {
+  background-color: orange;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: 2px solid;
+  color: brown;
+  border-radius: 10px;
+  transition: transform .5s;
+}
+.app_btn:hover {
+  transform: scale(1.1);
+  transition: transform .5s;
+}
+
+.app_text {
+  margin-top: 25px;
+  max-width: 70vh;
+  background-image: url(../public/fortuna-2/rectangle2.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:center;
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.app_author {
+  background-color: #ffffffd8;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  color: gray;
+}
